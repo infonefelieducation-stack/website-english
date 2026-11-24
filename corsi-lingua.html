@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>English and Italian language courses — Nefeli Education</title>
+<meta name="description" content="English and Italian L2 courses with Trinity College London, TOEFL iBT, TOEIC and CECOL certification. Levels A1–C2, lessons in person and online, exam simulations included.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <span>Accredited exam centre — Trinity College London · TOEFL · CECOL L2</span>
+      <a href="https://adl.nefelieducation.eu" target="_blank" rel="noopener">ADL student area →</a>
+    </div>
+  </div>
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" aria-label="Nefeli Education — home">
+      <img class="brand-logo" src="images/logo-light.png" alt="Nefeli Education" width="460" height="193">
+    </a>
+    <button class="nav-toggle" aria-label="Open the menu" aria-expanded="false" aria-controls="mainnav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="mainnav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="corsi-lingua.html" class="is-active">Language courses</a>
+      <a href="corsi-internazionali.html">International courses</a>
+      <a href="piattaforma.html">ADL Platform</a>
+      <a href="chi-siamo.html">About us</a>
+      <a href="progetto-olfa.html">OLFA project</a>
+      <a href="contatti.html">Contact</a>
+      <a href="#catalogo" class="btn btn--sm nav-cta">Enrol in a course</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="crumbs"><a href="index.html">Home</a><span>/</span>Language courses</div>
+      <span class="eyebrow">English · Italian L2</span>
+      <h1>Language as a discipline, not improvisation.</h1>
+      <p class="lede">Pathways built on the real exam format, with simulations, automatic assessment and reasoned error analysis. Choose your course, enrol online, access the platform.</p>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="section--tight section--paper">
+    <div class="wrap">
+      <div class="stats reveal">
+        <div class="stat"><b>A1–C2</b><span>All levels of the Common European Framework</span></div>
+        <div class="stat"><b>4</b><span>Certifications prepared: Trinity, TOEFL, TOEIC, CECOL</span></div>
+        <div class="stat"><b>On site</b><span>Take the exam where you prepared for it</span></div>
+        <div class="stat"><b>Online</b><span>ADL platform included in every pathway</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATALOGUE -->
+  <section class="section" id="catalogo">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="eyebrow">Catalogue</span>
+          <h2 class="h-sec">Choose your pathway.</h2>
+        </div>
+        <p class="lede">For each course you will find the total hours. Every pathway includes access to the ADL platform and the digital course materials. The 5-day courses (30 hours) eligible for Erasmus+ funding are collected on the <a href="corsi-internazionali.html" style="text-decoration:underline">International courses</a> page.</p>
+      </div>
+
+      <div class="filters reveal" role="group" aria-label="Filter the courses">
+        <div class="filter-group">
+          <span>Area</span>
+          <button class="fchip is-on" data-filter="lang" data-value="all">All</button>
+          <button class="fchip" data-filter="lang" data-value="inglese">English</button>
+          <button class="fchip" data-filter="lang" data-value="italiano">Italian L2</button>
+        </div>
+        <div class="filter-group">
+          <span>Format</span>
+          <button class="fchip is-on" data-filter="mode" data-value="all">All</button>
+          <button class="fchip" data-filter="mode" data-value="online">Online</button>
+          <button class="fchip" data-filter="mode" data-value="presenza">In person</button>
+        </div>
+        <div class="filter-group">
+          <span>Objective</span>
+          <button class="fchip is-on" data-filter="goal" data-value="all">All</button>
+          <button class="fchip" data-filter="goal" data-value="certificazione">Certification</button>
+          <button class="fchip" data-filter="goal" data-value="generale">General language</button>
+          <button class="fchip" data-filter="goal" data-value="professionale">Work</button>
+        </div>
+      </div>
+
+      <div class="course-grid" id="courseGrid"></div>
+      <p class="small" id="resultCount" style="margin-top:26px"></p>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section section--dark">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="eyebrow">The pathway</span>
+          <h2 class="h-sec">From enrolment to certificate.</h2>
+        </div>
+      </div>
+      <div class="steps reveal">
+        <div class="step"><b>01</b><h4>Choose and enrol</h4><p>Press “Enrol” on the course you have chosen and send the request: you will receive confirmation and, for 5-day courses, information on Erasmus+ funding.</p></div>
+        <div class="step"><b>02</b><h4>Level test</h4><p>Ten minutes to understand where you are starting from. The pathway adapts to your real level.</p></div>
+        <div class="step"><b>03</b><h4>Study and simulate</h4><p>Modules, exercises with immediate feedback and complete simulations under exam conditions.</p></div>
+        <div class="step"><b>04</b><h4>Certify</h4><p>Take the exam at our premises. The certificate comes from the official body.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO -->
+  <section class="section section--paper">
+    <div class="wrap split">
+      <div class="split-media reveal">
+        <img src="images/photo_classroom.jpg" alt="Students in the classroom during a language lesson" width="1100" height="732" loading="lazy">
+        <span class="frame-tag">Classroom lessons</span>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">In the classroom and online</span>
+        <h2 class="h-sec">The same care, in person and at a distance.</h2>
+        <p class="lede" style="margin-top:18px">In-person classes follow the same methodological framework as the online pathways: stated objectives, guided practice, assessment and feedback. The channel changes, not the standard.</p>
+        <div class="feature-list">
+          <div class="feature">
+            <span class="dot">01</span>
+            <div><h4>Small groups</h4><p>Contained classes to guarantee speaking time for every student.</p></div>
+          </div>
+          <div class="feature">
+            <span class="dot">02</span>
+            <div><h4>Native-speaker, certified teachers</h4><p>Specific preparation on the format of the exam you need to take.</p></div>
+          </div>
+          <div class="feature">
+            <span class="dot">03</span>
+            <div><h4>Platform included</h4><p>Every classroom course includes access to ADL so you can practise between lessons.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section section--sand">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="eyebrow">The spaces</span>
+          <h2 class="h-sec">Where the studying happens, day by day.</h2>
+        </div>
+        <p class="lede">Bright classrooms, pair-work corners for speaking practice and a reference library: the rooms where language-course work takes place, on site and connected to the virtual classroom.</p>
+      </div>
+      <div class="gallery reveal">
+        <figure class="g-item">
+          <img src="images/lingua-aula-vuota.jpg" alt="Language classroom with light wooden desks and a whiteboard, before the lesson begins" width="1024" height="768" loading="lazy">
+          <figcaption>The classroom, before the lesson</figcaption>
+        </figure>
+        <figure class="g-item">
+          <img src="images/lingua-speaking.jpg" alt="Speaking-practice corner with two armchairs, a table and a timer" width="1024" height="768" loading="lazy">
+          <figcaption>The speaking-practice corner</figcaption>
+        </figure>
+        <figure class="g-item">
+          <img src="images/lingua-materiali.jpg" alt="Study materials on a table: notebook, pen, headphones and glasses" width="1024" height="768" loading="lazy">
+          <figcaption>Materials and the ADL platform</figcaption>
+        </figure>
+        <figure class="g-item">
+          <img src="images/lingua-biblioteca.jpg" alt="Reference corner with shelves of dictionaries and language handbooks" width="1024" height="768" loading="lazy">
+          <figcaption>The reference library</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section section--paper">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="eyebrow">Certifications</span>
+          <h2 class="h-sec">A certificate that counts, in Italy and abroad.</h2>
+        </div>
+      </div>
+      <div class="grid g2">
+        <article class="card reveal">
+          <span class="num">Trinity College London</span>
+          <h3>GESE and ISE</h3>
+          <p>Spoken exam (GESE) and integrated skills exam (ISE), level by level. Recognised in the world of schools and training. We are an authorised exam centre.</p>
+        </article>
+        <article class="card reveal">
+          <span class="num">ETS</span>
+          <h3>TOEFL iBT and TOEIC</h3>
+          <p>TOEFL iBT for admission to Italian and foreign universities; TOEIC as the standard required by companies for professional English.</p>
+        </article>
+        <article class="card reveal">
+          <span class="num">University of Reggio Calabria</span>
+          <h3>CECOL L2</h3>
+          <p>Certification of Italian as a second language: useful for residence permits, university and work.</p>
+        </article>
+        <article class="card reveal">
+          <span class="num">Nefeli</span>
+          <h3>Certificate of attendance</h3>
+          <p>At the end of every course you receive a certificate stating the level reached and the hours completed, useful for CVs and public competitions.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="eyebrow">Frequently asked questions</span>
+          <h2 class="h-sec">About the language courses.</h2>
+        </div>
+      </div>
+      <div class="faq reveal" data-acc>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How long does it take to prepare for a certification?<span class="plus"></span></button>
+          <div class="faq-a"><p>It depends on your starting level and your objective. On average, those who study 30–40 minutes a day arrive prepared in 2–3 months. There are no deadlines: you can go at your own pace, stop and pick up again.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Are the lessons in person or online?<span class="plus"></span></button>
+          <div class="faq-a"><p>Both. Online courses take place in a virtual classroom with a teacher and on the ADL platform; in-person courses are held at our premises. Many pathways are blended.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How is the course funded?<span class="plus"></span></button>
+          <div class="faq-a"><p>The 5-day courses (30 hours) are designed to be funded through the Erasmus+ budget grant for mobility training: the cost is based on that contribution. They run in spring, summer and autumn and start only once the minimum number of 6 participants is reached. After your request, the office confirms availability, provides the documentation for the application and the certificate of attendance for reporting. For the other courses, indicated with their number of hours, the office communicates the arrangements and amount after your request. For schools, an invoice with split payment can be issued.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can I enrol a group or a class?<span class="plus"></span></button>
+          <div class="faq-a"><p>Yes. For groups of at least six participants we prepare a dedicated quote, with an agreed schedule and progress reports for the referring teacher. Write from the Contact page stating the institute and number of participants.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Is a refund available?<span class="plus"></span></button>
+          <div class="faq-a"><p>You may withdraw within 14 days of purchase if you have not yet accessed the course content. The full conditions are set out in the enrolment contract sent by the office.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap band-inner">
+      <div>
+        <h2>Not sure which level to start from?</h2>
+        <p>Take the entry test on the platform: in ten minutes you will know exactly where you are starting from and how far you have to go.</p>
+      </div>
+      <div class="band-actions">
+        <a href="https://adl.nefelieducation.eu" target="_blank" rel="noopener" class="btn btn--gold">Take the level test <span class="arw">→</span></a>
+        <a href="contatti.html" class="btn btn--outline-light">Talk to the office</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img class="brand-logo brand-logo--dark" src="images/logo-dark.png" alt="Nefeli Education" width="460" height="185">
+        </a>
+        <p>International school and training centre. Languages, certifications and training for teachers, school staff and students.</p>
+      </div>
+      <div>
+        <h5>Training</h5>
+        <div class="footer-links">
+          <a href="corsi-lingua.html">Language courses</a>
+          <a href="corsi-internazionali.html#docenti">Teacher training</a>
+          <a href="corsi-internazionali.html#ata">ATA staff</a>
+          <a href="corsi-internazionali.html#studenti">Student pathways</a>
+        </div>
+      </div>
+      <div>
+        <h5>Institute</h5>
+        <div class="footer-links">
+          <a href="chi-siamo.html">About us</a>
+          <a href="progetto-olfa.html">OLFA project</a>
+          <a href="piattaforma.html">ADL Platform</a>
+          <a href="contatti.html">Contact</a>
+          <a href="https://adl.nefelieducation.eu" target="_blank" rel="noopener">Student area</a>
+        </div>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <div class="footer-links">
+          <a href="mailto:info@nefelieducation.eu">info@nefelieducation.eu</a>
+          <a href="contatti.html">Contact form</a>
+          <a href="contatti.html#scuole">School agreements</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Nefeli Education — Educational nucleus for European training for international work</span>
+      <span><a href="contatti.html">Privacy and data processing</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- CART -->
+<button class="cart-fab" id="cartFab" aria-label="Open your enrolments">
+  <span>My enrolments</span><span class="cart-count" id="cartCount">0</span>
+</button>
+
+<div class="drawer" id="cartDrawer" aria-hidden="true">
+  <div class="drawer-bg" data-close-cart></div>
+  <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="Your enrolments">
+    <div class="drawer-head">
+      <h3>Your enrolments</h3>
+      <button class="x-btn" data-close-cart aria-label="Close">×</button>
+    </div>
+    <div class="drawer-body" id="cartBody"></div>
+    <div class="drawer-foot">
+      <button class="btn btn--gold btn--block" id="checkoutBtn">Proceed with enrolment <span class="arw">→</span></button>
+      <p class="form-note">The request does not involve any immediate charge: the office confirms availability and payment arrangements.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CHECKOUT MODAL -->
+<div class="modal" id="checkoutModal" aria-hidden="true">
+  <div class="modal-bg" data-close-modal></div>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="coTitle">
+    <button class="x-btn modal-close" data-close-modal aria-label="Close">×</button>
+    <h3 id="coTitle">Enrolment request</h3>
+    <p class="small" id="coSub">Fill in your details: the office will reply within two working days.</p>
+    <div class="steps-bar"><div class="on"></div><div></div><div></div></div>
+
+    <form id="checkoutForm" novalidate>
+      <div class="form-grid">
+        <div class="field">
+          <label for="coNome">Full name *</label>
+          <input type="text" id="coNome" name="nome" autocomplete="name" required>
+          <span class="err">Please enter your full name.</span>
+        </div>
+        <div class="field">
+          <label for="coEmail">Email *</label>
+          <input type="email" id="coEmail" name="email" autocomplete="email" required>
+          <span class="err">Please enter a valid email address.</span>
+        </div>
+        <div class="field">
+          <label for="coTel">Phone</label>
+          <input type="tel" id="coTel" name="telefono" autocomplete="tel">
+          <span class="err">Invalid number.</span>
+        </div>
+        <div class="field">
+          <label for="coLivello">Current level</label>
+          <select id="coLivello" name="livello">
+            <option value="I don't know / to be assessed">I don't know / to be assessed</option>
+            <option value="A1 — beginner">A1 — beginner</option>
+            <option value="A2 — elementary">A2 — elementary</option>
+            <option value="B1 — intermediate">B1 — intermediate</option>
+            <option value="B2 — upper intermediate">B2 — upper intermediate</option>
+            <option value="C1 — advanced">C1 — advanced</option>
+            <option value="C2 — proficiency">C2 — proficiency</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label for="coNote">Notes (preferred times, particular needs)</label>
+          <textarea id="coNote" name="note" rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="order-sum" id="orderSum"></div>
+
+      <div class="pay-options">
+        <label class="pay-opt" id="payErasmus">
+          <input type="radio" name="pagamento" value="Erasmus+ (budget grant)" checked>
+          <span><strong>Erasmus+ (budget grant)</strong><span>Documentation for application and reporting.</span></span>
+        </label>
+        <label class="pay-opt">
+          <input type="radio" name="pagamento" value="Institute funds" id="payIstituto">
+          <span><strong>Institute funds</strong><span>Teacher card, school budget or other funds.</span></span>
+        </label>
+        <label class="pay-opt">
+          <input type="radio" name="pagamento" value="Other funding">
+          <span><strong>Other funding</strong><span>Mention it in the notes: we will reply with the options.</span></span>
+        </label>
+      </div>
+
+      <label class="check" style="margin-bottom:18px">
+        <input type="checkbox" id="coPrivacy" required>
+        <span>I have read the privacy notice on the processing of personal data and consent to being contacted by Nefeli Education. *</span>
+      </label>
+
+      <button type="submit" class="btn btn--gold btn--block">Send the enrolment request</button>
+      <p class="form-note">No payment is made on this website. The request is recorded and forwarded to the office.</p>
+      <div class="form-ok" id="coOk"></div>
+    </form>
+  </div>
+</div>
+
+<script src="assets/js/site.js"></script>
+<script>
+(function(){
+  'use strict';
+
+  var COURSES = [
+    {id:'eng-a1', lang:'inglese', mode:'online', goal:'generale', title:'English A1 — First level', sub:'From the basics to your first conversation', level:'A1', hours:'40 hours', prog:['First contacts: greetings, alphabet, numbers and introductions', 'People and family: the verb to be, adjectives, descriptions', 'Daily routine: present simple, times, habits', 'In town: directions, shops, ordering food and drinks', 'Revision, guided mini-conversation and final test'], tag:'Online', tagClass:''},
+    {id:'eng-a2', lang:'inglese', mode:'presenza', goal:'generale', title:'English A2 — Elementary', sub:'Everyday life, travel and basic work', level:'A2', hours:'40 hours', prog:['Talking about the past: past simple and connectors', 'Travel and transport: booking, asking for information', 'Health, shopping and services: practical dialogues', 'Future plans: going to, will, invitations and offers', 'Full role-play and spoken assessment'], tag:'In person', tagClass:'tag--teal'},
+    {id:'eng-b1', lang:'inglese', mode:'online', goal:'generale', title:'English B1 — Intermediate', sub:'Independence in everyday communication', level:'B1', hours:'50 hours', prog:['Experiences and present perfect: telling your life story', 'Work and study: emails, interviews, descriptions', 'Opinions and debate: discussing and arguing', 'Conditionals and hypotheses: real and unreal situations', 'Final project: presentation and feedback'], tag:'Online', tagClass:''},
+    {id:'eng-b2', lang:'inglese', mode:'online', goal:'certificazione', title:'English B2 — Trinity ISE II preparation', sub:'Integrated exam: reading, writing, speaking', level:'B2', hours:'60 hours', prog:['Trinity ISE II format and level assessment', 'Reading & Writing: opinion text and formal email', 'Listening and Speaking: conversation and discussion', "Integrated Skills: combined tasks and exam techniques", 'Full simulation and error analysis'], tag:'Certification', tagClass:'tag--gold'},
+    {id:'eng-toefl', lang:'inglese', mode:'online', goal:'certificazione', title:'TOEFL iBT — Complete preparation', sub:'Reading, listening, speaking, writing', level:'B1–C1', hours:'60 hours', prog:['TOEFL iBT structure and time strategies', 'Reading: academic texts and question types', 'Listening: lectures and conversations, note-taking', 'Speaking and Writing: integrated and independent tasks', 'Full simulation and improvement plan'], tag:'Certification', tagClass:'tag--gold'},
+    {id:'eng-toeic', lang:'inglese', mode:'online', goal:'professionale', title:'TOEIC — Professional English', sub:'The standard required by companies', level:'A2–C1', hours:'40 hours', prog:['TOEIC Listening & Reading format and business vocabulary', 'Listening: announcements, phone calls, meetings', 'Reading: emails, notices, company documents', 'High-frequency professional grammar and vocabulary', 'Full simulation and score analysis'], tag:'Work', tagClass:'tag--teal'},
+    {id:'eng-business', lang:'inglese', mode:'online', goal:'professionale', title:'Business English', sub:'Meetings, emails, negotiation, presentations', level:'B1–C1', hours:'40 hours', prog:['Introducing yourself and networking in work contexts', 'Effective professional emails and reports', 'Meetings: intervening, proposing, agreeing', 'Negotiation and handling disagreement', 'Final presentation and role-play with feedback'], tag:'Work', tagClass:'tag--teal'},
+    {id:'ita-a1', lang:'italiano', mode:'online', goal:'generale', title:'Italian L2 — A1', sub:'First steps: alphabet, sounds, useful phrases', level:'A1', hours:'40 hours', prog:["Alphabet, sounds and syllables: the first sounds of Italian", 'Greetings, introductions, numbers and personal details', 'Family, home and objects: articles and the present of essere/avere', 'Verbs in -are, -ere, -ire: everyday actions', 'Useful phrases for services and final assessment'], tag:'Online', tagClass:''},
+    {id:'ita-a2', lang:'italiano', mode:'presenza', goal:'generale', title:'Italian L2 — A2', sub:'Everyday life, services, relationships', level:'A2', hours:'40 hours', prog:['Daily routine and times: reflexive verbs', 'At the supermarket, at the bar, at the market: shopping and quantities', 'Services: post office, bank, doctor, transport', 'Talking about the past: passato prossimo', 'Relationships and free time: dialogues and assessment'], tag:'In person', tagClass:'tag--teal'},
+    {id:'ita-b1', lang:'italiano', mode:'online', goal:'certificazione', title:'Italian L2 — B1 CECOL', sub:'Preparation for the certification exam', level:'B1', hours:'50 hours', prog:['CECOL B1 format and initial assessment', 'Listening and comprehension: dialogues and announcements', 'Reading and writing: letters, emails and short texts', 'Speaking: presenting, arguing, interacting', 'Exam simulation and guided correction'], tag:'Certification', tagClass:'tag--gold'},
+    {id:'ita-b2', lang:'italiano', mode:'online', goal:'certificazione', title:'Italian L2 — B2 CECOL', sub:'Study, work and university access', level:'B2', hours:'60 hours', prog:['CECOL B2 format and study strategies', 'Understanding complex texts and listening to lectures', 'Argumentative writing and formal texts', 'Speaking: presentation, discussion, academic language', 'Exam simulation and reinforcement plan'], tag:'Certification', tagClass:'tag--gold'},
+    {id:'ita-citt', lang:'italiano', mode:'presenza', goal:'professionale', title:'Italian for work and citizenship', sub:'Language for residence permits and employment', level:'A2–B1', hours:'36 hours', prog:['Documents, residence permits and public offices', 'Job hunting: adverts, CVs, interviews', 'In the workplace: safety, contracts, communications', 'Citizenship and rights: the Constitution, services, health', 'Language test simulation and final assessment'], tag:'Work', tagClass:'tag--teal'},
+    {id:'ita-conv', lang:'italiano', mode:'online', goal:'generale', title:'Italian — Guided conversation', sub:'Spoken workshop in a small group', level:'B1–C1', hours:'24 hours', prog:['Talking about yourself: experiences, plans, ambitions', 'Current affairs and opinions: discussing in a group', 'Everyday situations: complaints, requests, negotiations', 'Idiomatic vocabulary, register and pronunciation', 'Final debate and individual feedback'], tag:'Online', tagClass:''},
+  ];
+
+
+  /* 5-day courses (30 hours = 5 x 6 h): for each day [morning 3 h, afternoon 3 h].
+     The day title is the corresponding entry in prog. */
+  var DAYS = {
+    'eng-trinity': [
+      ['Presentation of the GESE format and levels (Grade 4–12); individual diagnostic interview to identify the most suitable grade.','Basic vocabulary and structures for the grade; first paired conversation simulations with teacher feedback.'],
+      ['Choosing and developing the personal topic: outline, dedicated vocabulary and first delivery.','Conversation phase: syllabus topics, extended answers and small-group work.'],
+      ['Expressing opinions, preferences, agreement and disagreement: connectors and functional structures for the grade.','Guided speaking, audio recording and self-correction with the teacher.'],
+      ['Interactive phase: techniques for asking questions, reacting and taking the initiative in the dialogue with the examiner.','Role-play with a native-speaker teacher; feedback on pronunciation, fluency and accuracy.'],
+      ['Complete individual exam simulation with an examiner, under the real conditions of the test.','Individual feedback on results, error analysis and a study plan towards the exam.']
+    ],
+    'doc-ai': [
+      ['The DigComp 2.2 and DigCompEdu frameworks; how generative AI models work, potential and limits.','Guided exploration of AI assistants on real school tasks and critical analysis of the results.'],
+      ['Anatomy of a prompt: role, context, constraints and format; refinement techniques.','Workshop: creating worksheets, exercises and differentiated assessments by level with AI.'],
+      ['AI-enhanced presentations, quizzes and collaborative boards: overview and hands-on trial.','Designing an interactive, collaborative activity; peer testing.'],
+      ['Student data protection (GDPR), bias, transparency and copyright.','Drafting shared rules of use with students; case studies on plagiarism and assessment.'],
+      ['Designing, individually or in groups, a learning unit with AI.','Presenting the work, peer feedback and a classroom implementation plan.']
+    ],
+    'doc-inclusione': [
+      ['Main legal references (Law 104/1992, Law 170/2010, Legislative Decree 66/2017) and categories of special educational needs.','Discussion of cases from participants\' classes and mapping of needs.'],
+      ['Systematic classroom observation; the ICF bio-psycho-social model and the Functioning Profile.','Workshop: completing observation grids on simulated cases.'],
+      ['Universal Design for Learning: representation, action and expression, engagement.','Redesigning a lesson according to UDL principles; differentiated teaching and peer tutoring.'],
+      ['Compensatory tools and dispensatory measures; overview of software and apps (speech synthesis, mind maps, facilitated reading).','Hands-on trial of the tools and matching them to different student profiles.'],
+      ['Structure of the IEP and its link to the life project: objectives, strategies and assessment.','Case workshop: drafting a section of the IEP and collective feedback.']
+    ],
+    'doc-clil': [
+      ['Theoretical framework: the 4Cs (content, communication, cognition, culture), the difference between CLIL and a language lesson.','Analysis of CLIL lessons; self-assessment of your own English level and language needs.'],
+      ['Classroom language: instructions, explanations, questions at different cognitive levels and feedback.','Oral practice in small groups and simulation of short lesson segments; pronunciation and fluency.'],
+      ['Choosing content, subject and language objectives, planning the module.','Workshop: designing a CLIL module in your own subject.'],
+      ['Adapting texts, charts and videos; glossaries, diagrams and sentence frames to support pupils.','Producing the materials for your module with teacher tutoring.'],
+      ['Micro-teaching: each participant delivers a segment of their module.','Peer assessment with an observation grid; CLIL assessment strategies and final feedback.']
+    ],
+    'doc-flipped': [
+      ['Principles and phases of the flipped classroom; examples across subjects.','Analysing participants\' contexts and designing the “at home – in class” cycle.'],
+      ['Recording and editing short video lessons: tools, length and effective structure.','Workshop: producing a video lesson with integrated quizzes and support materials.'],
+      ['Cooperative learning: positive interdependence, roles and group formation; techniques (jigsaw, think–pair–share).','Direct trial of the techniques, with participants in the student role.'],
+      ['Designing classroom activities, problem solving and authentic tasks; managing time and space.','Developing a complete flipped unit with cooperative learning.'],
+      ['Simulation of a flipped lesson with the group in the role of the class.','Feedback, peer assessment and implementation plan.']
+    ],
+    'doc-valutazione': [
+      ['From assessing knowledge to assessing competences: European key competences, levels and descriptors.','Analysing the assessment tools in use and defining indicators.'],
+      ['Structure of a rubric: criteria, descriptors, levels and weightings.','Workshop: building rubrics for a test in your own subject.'],
+      ['Principles of effective feedback; formative assessment, peer assessment and self-assessment.','Feedback simulations and designing self-assessment activities.'],
+      ['Digital tools for quizzes, forms, tests and portfolios.','Creating a digital test with automatic feedback and analysing the results.'],
+      ['Designing a real-world task and the rubric to assess it.','Presenting the work, peer assessment and implementation plan.']
+    ],
+    'doc-conflitto': [
+      ['Group dynamics, informal roles, classroom climate and educational leadership.','Experiential activities and analysis of situations drawn from participants\' classes.'],
+      ['Assertive communication, active listening and I-messages.','Paired exercises and role-play of difficult conversations.'],
+      ['Building shared rules; strategies for problematic behaviour and educational sanctions.','Case study and drafting a classroom agreement.'],
+      ['Phases and tools of mediation: between students, peer mediation and with families.','Mediation role-play: student–student and teacher–family.'],
+      ['Complete simulations on cases brought by participants, with observation and feedback.','Drafting a personal action plan for your own class and final discussion.']
+    ],
+    'doc-stem': [
+      ['The STEAM approach, project-based and inquiry learning; examples of activities by age.','Hands-on problem-based learning workshop with simple materials.'],
+      ['Decomposition, algorithms and pattern recognition: computational thinking.','Unplugged coding activities: routes, coding games, instruction cards; adapting for age.'],
+      ['Introduction to block-based environments: sprites, events and loops.','Creating first projects: stories, games and quizzes linked to subjects.'],
+      ['Educational robots and programmable boards; sensors and actuators.','Building and programming a robotic route with sensors.'],
+      ['Group work: designing a STEAM activity for your own class.','Presenting the work, feedback, activity plan and assessment.']
+    ],
+    'doc-l2': [
+      ['Welcoming the foreign pupil and family; welcome protocol; language for communicating and language for studying.','Tools for identifying language needs and initial entry tests.'],
+      ['Literacy: the syllabic method, sounds, syllables, reading and writing.','Workshop on activities for the pre-A1 level: cards, phonological games and worksheets.'],
+      ['Basic vocabulary, structures and teaching sequences with reference to the CEFR.','Creating materials and activities for pre-A1/A1 levels.'],
+      ['Facilitating subject texts: simplification, glossaries, diagrams and images.','Adapting a history or science text and producing facilitated materials.'],
+      ['Assessing the non-Italian-speaking pupil: grids, tests and certification of competences.','Designing an Italian L2 pathway and final presentation.']
+    ],
+    'doc-erasmus': [
+      ['Programme structure: KA1 and KA2 key actions, accreditations; opportunities for schools, sources and calls.','Examples of completed projects and discussion of participants\' schools\' needs.'],
+      ['Needs analysis, SWOT and SMART objectives; the European development plan.','Workshop: defining needs and objectives for your own school.'],
+      ['The eTwinning platform: registration, finding partners and the project space.','Hands-on exercise on the platform: finding partners and making first contacts.'],
+      ['Completing the application form; budget (lump sum and unit costs) and indicators.','Guided drafting of an application for your own project.'],
+      ['Project management, communication and dissemination of results.','Reporting and final report; presenting the work and discussion.']
+    ],
+    'ata-servizi': [
+      ['The role and profiles of ATA staff, school organisation, responsibilities and teamwork.','Group activities on organisational cases and internal communication.'],
+      ['Digital protocol, archives, record keeping, digital signature and certified email (PEC).','Practical exercises on digital document management, digital secretariat and privacy (GDPR).'],
+      ['Workplace safety (Legislative Decree 81/2008): risks, PPE, emergency and evacuation plans; supervision of premises.','First aid: basic notions and practical exercises.'],
+      ['Welcoming and communicating with users: listening, language and front office.','Role-play on handling conflicts and complaints.'],
+      ['Basic assistance to pupils with disabilities: hygiene, mobility, autonomy and relationship.','Final assessment, feedback and issue of the certificate.']
+    ]
+  };
+  function isFive(c){ return !!DAYS[c.id]; }
+  var LOC5 = 'Treviso or Venice';
+  var MIX = 'Half in person, half online';
+  var PERIODS = 'Spring, summer and autumn';
+  var MINP = 'The course starts only once the minimum number of 6 participants is reached.';
+  var COST5 = 'Cost based on the Erasmus+ budget grant';
+  function modeLabel(c){ return isFive(c) ? 'Venue: ' + LOC5 : MIX; }
+
+  var state = {lang:'all', mode:'all', goal:'all'};
+  var cart = [];
+  var grid = document.getElementById('courseGrid');
+  var countEl = document.getElementById('resultCount');
+
+  function langLabel(l){ return l==='inglese'?'English':l==='italiano'?'Italian L2':l==='docenti'?'Teachers':'ATA staff'; }
+  function progHtml(c){
+    if(isFive(c)){
+      return '<details class="prog"><summary>5-day programme · 30 hours</summary><ol>' +
+        c.prog.map(function(t,i){
+          var d = DAYS[c.id][i];
+          return '<li><b>Day ' + (i+1) + ' · 6 hours</b>' + t +
+            '<span class="slot"><em>Morning · 3 h</em>' + d[0] + '</span>' +
+            '<span class="slot"><em>Afternoon · 3 h</em>' + d[1] + '</span></li>';
+        }).join('') + '</ol></details>';
+    }
+    return '<details class="prog"><summary>Course programme · ' + c.hours + '</summary><ol>' +
+      c.prog.map(function(d,i){ return '<li><b>Module ' + (i+1) + '</b> ' + d + '</li>'; }).join('') + '</ol></details>';
+  }
+  function costLabel(c){ return isFive(c) ? 'Erasmus+ budget grant' : c.hours; }
+
+  function render(){
+    var list = COURSES.filter(function(c){
+      return (state.lang==='all'||c.lang===state.lang) &&
+             (state.mode==='all'||(!isFive(c))||c.mode===state.mode) &&
+             (state.goal==='all'||c.goal===state.goal);
+    });
+    if(!list.length){
+      grid.innerHTML = '<div class="empty-state">No course matches these filters. Try removing one.</div>';
+    } else {
+      grid.innerHTML = list.map(function(c){
+        return '<article class="course">' +
+          '<div class="course-top">' +
+            '<div class="course-tags"><span class="tag">' + langLabel(c.lang) + '</span>' +
+            '<span class="tag ' + c.tagClass + '">' + ((!isFive(c) && (c.tag==='Online'||c.tag==='In person')) ? 'In person + online' : c.tag) + '</span>' +
+            '<span class="tag">' + c.level + '</span></div>' +
+            '<h3>' + c.title + '</h3>' +
+            '<p class="sub">' + c.sub + '</p>' +
+            '<div class="meta"><span>' + c.hours + '</span>' + (isFive(c) ? '<span>5 days</span>' : '') + '<span>' + modeLabel(c) + '</span>' + (isFive(c) ? '<span>Periods: ' + PERIODS + '</span>' : '') + '<span>ADL platform included</span></div>' + (isFive(c) ? '<p class="minp">' + MINP + '</p>' : '') + progHtml(c) +
+          '</div>' +
+          '<div class="course-foot">' +
+            (isFive(c) ? '<div class="price price--lump">Erasmus+<small>budget grant</small></div>' : '<div class="price price--lump">' + c.hours + '<small>course length</small></div>') +
+            '<button class="btn btn--sm" data-add="' + c.id + '">Enrol</button>' +
+          '</div>' +
+        '</article>';
+      }).join('');
+    }
+    countEl.textContent = list.length + (list.length===1?' course':' courses') + ' available';
+  }
+
+  document.querySelectorAll('.fchip').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var f = btn.getAttribute('data-filter');
+      state[f] = btn.getAttribute('data-value');
+      document.querySelectorAll('.fchip[data-filter="'+f+'"]').forEach(function(b){ b.classList.remove('is-on'); });
+      btn.classList.add('is-on');
+      render();
+    });
+  });
+
+  /* ---- cart ---- */
+  var drawer = document.getElementById('cartDrawer');
+  var cartBody = document.getElementById('cartBody');
+  var cartCount = document.getElementById('cartCount');
+
+  function findCourse(id){ return COURSES.filter(function(c){return c.id===id;})[0]; }
+
+  function renderCart(){
+    cartCount.textContent = cart.length;
+    if(!cart.length){
+      cartBody.innerHTML = '<p class="small" style="padding:20px 0">No course selected. Press “Enrol” on a course in the catalogue to start.</p>';
+      return;
+    }
+    cartBody.innerHTML = cart.map(function(id){
+      var c = findCourse(id);
+      return '<div class="cart-line">' +
+        '<h4>' + c.title + '</h4>' +
+        '<div class="cl-price">' + costLabel(c) + '</div>' +
+        '<div class="cl-meta">' + langLabel(c.lang) + ' · ' + c.hours + ' · ' + c.level + ' · ' + modeLabel(c) + (isFive(c) ? ' · ' + PERIODS : '') + '</div>' +
+        '<button class="rm" data-rm="' + id + '">Remove</button>' +
+      '</div>';
+    }).join('');
+  }
+
+  function openCart(){ drawer.classList.add('is-open'); drawer.setAttribute('aria-hidden','false'); }
+  function closeCart(){ drawer.classList.remove('is-open'); drawer.setAttribute('aria-hidden','true'); }
+
+  document.getElementById('cartFab').addEventListener('click', openCart);
+  document.querySelectorAll('[data-close-cart]').forEach(function(el){ el.addEventListener('click', closeCart); });
+
+  grid.addEventListener('click', function(e){
+    var btn = e.target.closest('[data-add]');
+    if(!btn) return;
+    var id = btn.getAttribute('data-add');
+    if(cart.indexOf(id) === -1){ cart.push(id); }
+    renderCart();
+    btn.textContent = 'Selected ✓';
+    setTimeout(function(){ btn.textContent = 'Enrol'; }, 1400);
+    openCart();
+  });
+
+  cartBody.addEventListener('click', function(e){
+    var btn = e.target.closest('[data-rm]');
+    if(!btn) return;
+    cart = cart.filter(function(id){ return id !== btn.getAttribute('data-rm'); });
+    renderCart();
+  });
+
+  /* ---- checkout ---- */
+  var modal = document.getElementById('checkoutModal');
+  var orderSum = document.getElementById('orderSum');
+  var form = document.getElementById('checkoutForm');
+
+  function openModal(){
+    if(!cart.length){ openCart(); return; }
+    orderSum.innerHTML = cart.map(function(id){
+      var c = findCourse(id);
+      return '<div class="row"><span>' + c.title + ' <small>(' + modeLabel(c) + ')</small></span><span>' + costLabel(c) + '</span></div>';
+    }).join('');
+    var hasFive = cart.some(function(id){ return isFive(findCourse(id)); });
+    orderSum.innerHTML += hasFive ? '<p class="small" style="margin-top:8px">5-day courses: periods ' + PERIODS.toLowerCase() + '. ' + MINP + ' ' + COST5 + '.</p>' : '';
+    var payE = document.getElementById('payErasmus');
+    payE.style.display = hasFive ? '' : 'none';
+    if(!hasFive){ document.getElementById('payIstituto').checked = true; }
+    else if(!form.querySelector('input[name="pagamento"]:checked')){ payE.querySelector('input').checked = true; }
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(){
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+  }
+
+  document.getElementById('checkoutBtn').addEventListener('click', function(){ closeCart(); openModal(); });
+  document.querySelectorAll('[data-close-modal]').forEach(function(el){ el.addEventListener('click', closeModal); });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ closeModal(); closeCart(); }
+  });
+
+  function setErr(input, bad){
+    var field = input.closest('.field');
+    if(field) field.classList.toggle('has-err', bad);
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var nome = document.getElementById('coNome');
+    var email = document.getElementById('coEmail');
+    var privacy = document.getElementById('coPrivacy');
+    var ok = true;
+
+    if(!nome.value.trim()){ setErr(nome, true); ok = false; } else setErr(nome, false);
+    var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email.value.trim());
+    if(!emailOk){ setErr(email, true); ok = false; } else setErr(email, false);
+    if(!privacy.checked){ ok = false; privacy.style.outline = '2px solid #a33a2c'; } else privacy.style.outline = '';
+
+    if(!ok) return;
+
+    var pay = form.querySelector('input[name="pagamento"]:checked').value;
+    var lines = cart.map(function(id){ var c = findCourse(id); return '• ' + c.title + ' — ' + (isFive(c) ? COST5 : c.hours) + ' — ' + modeLabel(c) + (isFive(c) ? ' — Periods: ' + PERIODS + ' — ' + MINP : ''); }).join('\n');
+
+    var body = 'ENROLMENT REQUEST — Nefeli Education\n\n' +
+      'Name: ' + nome.value.trim() + '\n' +
+      'Email: ' + email.value.trim() + '\n' +
+      'Phone: ' + (document.getElementById('coTel').value.trim() || '—') + '\n' +
+      'Declared level: ' + document.getElementById('coLivello').value + '\n' +
+      'Planned funding: ' + pay + '\n\n' +
+      'Courses requested:\n' + lines + '\n\n' +
+            'Notes: ' + (document.getElementById('coNote').value.trim() || '—');
+
+    var okBox = document.getElementById('coOk');
+    var TO = 'infonefelieducation@gmail.com';
+    var subject = 'Enrolment request — ' + nome.value.trim();
+    var submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    var oldLabel = submitBtn.textContent;
+    submitBtn.textContent = 'Sending…';
+
+    function fallback(){
+      okBox.innerHTML = '<strong>Request ready.</strong> Your email programme will open with all the details already filled in: send the message to complete your enrolment. Alternatively, write to <a href="mailto:' + TO + '" style="text-decoration:underline">' + TO + '</a>.';
+      okBox.classList.add('show');
+      window.location.href = 'mailto:' + TO + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    }
+
+    fetch('https://formsubmit.co/ajax/' + TO, {
+      method: 'POST',
+      headers: {'Content-Type':'application/json','Accept':'application/json'},
+      body: JSON.stringify({
+        _subject: subject,
+        _replyto: email.value.trim(),
+        _template: 'box',
+        _captcha: 'false',
+        Name: nome.value.trim(),
+        Email: email.value.trim(),
+        Phone: document.getElementById('coTel').value.trim() || '—',
+        Level: document.getElementById('coLivello').value,
+        Funding: pay,
+        Courses: lines,
+        Notes: document.getElementById('coNote').value.trim() || '—'
+      })
+    }).then(function(r){ return r.json(); }).then(function(d){
+      if(d && (d.success === true || d.success === 'true')){
+        okBox.innerHTML = '<strong>Request sent.</strong> Thank you! The office will reply within two working days.';
+        okBox.classList.add('show');
+        cart = []; renderCart(); form.reset();
+        setTimeout(closeModal, 4000);
+      } else { throw new Error('send failed'); }
+    }).catch(function(){ fallback(); })
+      .then(function(){ submitBtn.disabled = false; submitBtn.textContent = oldLabel; });
+  });
+
+  render();
+  renderCart();
+})();
+</script>
+</body>
+</html>

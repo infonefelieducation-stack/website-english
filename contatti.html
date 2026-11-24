@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Nefeli Education</title>
+<meta name="description" content="Contact Nefeli Education: information on language courses, training proposals for schools, agreements and international partnerships.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <span>Accredited exam centre — Trinity College London · TOEFL · CECOL L2</span>
+      <a href="https://adl.nefelieducation.eu" target="_blank" rel="noopener">ADL student area →</a>
+    </div>
+  </div>
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" aria-label="Nefeli Education — home">
+      <img class="brand-logo" src="images/logo-light.png" alt="Nefeli Education" width="460" height="193">
+    </a>
+    <button class="nav-toggle" aria-label="Open the menu" aria-expanded="false" aria-controls="mainnav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="mainnav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="corsi-lingua.html">Language courses</a>
+      <a href="corsi-internazionali.html">International courses</a>
+      <a href="piattaforma.html">ADL Platform</a>
+      <a href="chi-siamo.html">About us</a>
+      <a href="progetto-olfa.html">OLFA project</a>
+      <a href="contatti.html" class="is-active">Contact</a>
+      <a href="corsi-lingua.html#catalogo" class="btn btn--sm nav-cta">Enrol in a course</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="crumbs"><a href="index.html">Home</a><span>/</span>Contact</div>
+      <span class="eyebrow">Write to us</span>
+      <h1>Let's talk about your pathway.</h1>
+      <p class="lede">Whether it is a language course, a training proposal for your institute or an international partnership, we reply within two working days.</p>
+    </div>
+  </section>
+
+  <section class="section section--paper" id="scuole">
+    <div class="wrap contact-grid">
+
+      <div class="contact-card reveal">
+        <h2 class="h-sec" style="font-size:1.7rem;margin-bottom:8px">Contact form</h2>
+        <p class="small" style="margin-bottom:28px">Fields marked with * are required.</p>
+
+        <form id="contactForm" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="cNome">Full name *</label>
+              <input type="text" id="cNome" name="nome" autocomplete="name" required>
+              <span class="err">Please enter your full name.</span>
+            </div>
+            <div class="field">
+              <label for="cEmail">Email *</label>
+              <input type="email" id="cEmail" name="email" autocomplete="email" required>
+              <span class="err">Please enter a valid email address.</span>
+            </div>
+            <div class="field">
+              <label for="cTel">Phone</label>
+              <input type="tel" id="cTel" name="telefono" autocomplete="tel">
+              <span class="err">Invalid number.</span>
+            </div>
+            <div class="field">
+              <label for="cEnte">Institute / organisation</label>
+              <input type="text" id="cEnte" name="ente" autocomplete="organization">
+            </div>
+            <div class="field full">
+              <label for="cMotivo">Reason for your enquiry *</label>
+              <select id="cMotivo" name="motivo" required>
+                <option value="">Select…</option>
+                <option value="Information about a language course">Information about a language course</option>
+                <option value="Enrolment in a language course">Enrolment in a language course</option>
+                <option value="Training proposal for a school">Training proposal for a school</option>
+                <option value="Teacher training">Teacher training</option>
+                <option value="ATA staff training">ATA staff training</option>
+                <option value="Student pathways (PCTO / guidance)">Student pathways (PCTO / guidance)</option>
+                <option value="Workplace safety and regulatory compliance">Workplace safety and regulatory compliance</option>
+                <option value="ADL platform and access">ADL platform and access</option>
+                <option value="Agreement or international partnership">Agreement or international partnership</option>
+                <option value="Other">Other</option>
+              </select>
+              <span class="err">Please select a reason for your enquiry.</span>
+            </div>
+            <div class="field full">
+              <label for="cMsg">Message *</label>
+              <textarea id="cMsg" name="messaggio" rows="5" required placeholder="Briefly describe what you need: participants, number of attendees, timing."></textarea>
+              <span class="err">Please write a message of at least 10 characters.</span>
+            </div>
+          </div>
+
+          <label class="check" style="margin:20px 0 18px">
+            <input type="checkbox" id="cPrivacy" required>
+            <span>I have read the privacy notice on the processing of personal data and consent to being contacted by Nefeli Education. *</span>
+          </label>
+
+          <button type="submit" class="btn btn--gold btn--block">Send the message</button>
+          <p class="form-note">The form prepares an email with all the details you entered and opens your email programme: press “Send” to complete. Alternatively, write directly to <a href="mailto:infonefelieducation@gmail.com" style="text-decoration:underline">infonefelieducation@gmail.com</a>.</p>
+          <div class="form-ok" id="cOk"></div>
+        </form>
+      </div>
+
+      <aside class="reveal contact-aside">
+        <div class="info-block">
+          <span>Email</span>
+          <strong><a href="mailto:infonefelieducation@gmail.com">infonefelieducation@gmail.com</a></strong>
+          <p>For general information, enrolments and training proposals.</p>
+        </div>
+        <div class="info-block">
+          <span>Learning platform</span>
+          <strong><a href="https://adl.nefelieducation.eu" target="_blank" rel="noopener">adl.nefelieducation.eu</a></strong>
+          <p>Access to the portals, level tests and exam simulations.</p>
+        </div>
+        <div class="info-block">
+          <span>Exam centre</span>
+          <strong>Trinity College London · TOEFL · CECOL L2</strong>
+          <p>Exam sessions are held at our premises. Write to us for the calendar and to register for a session.</p>
+        </div>
+        <div class="info-block">
+          <span>Schools and organisations</span>
+          <strong>Agreements and project design</strong>
+          <p>For training proposals, PCTO agreements and Erasmus+ partnerships, please state the institute, participants and number of attendees.</p>
+        </div>
+        <div class="info-block">
+          <span>Response times</span>
+          <strong>Within 2 working days</strong>
+          <p>Quote requests from schools receive a written proposal with programme and total hours.</p>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="eyebrow">Before you write</span>
+          <h2 class="h-sec">The answer may already be here.</h2>
+        </div>
+      </div>
+      <div class="faq reveal" data-acc>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How do I enrol in a language course?<span class="plus"></span></button>
+          <div class="faq-a"><p>From the catalogue on the Language courses page: choose the course, press “Enrol” and send the enrolment request. The office confirms availability and sends payment instructions.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do you run courses at our school?<span class="plus"></span></button>
+          <div class="faq-a"><p>Yes. We design tailor-made pathways for institutes in Italy and abroad, in person, online or blended. Tell us the area, participants and number of attendees from the International courses page.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do you issue language certifications?<span class="plus"></span></button>
+          <div class="faq-a"><p>We are an authorised exam centre: you can take the test here. The certificate is issued by the official body (Trinity College London, ETS for TOEFL and TOEIC, the certifying body for Italian L2).</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How do I access the platform?<span class="plus"></span></button>
+          <div class="faq-a"><p>From <a href="https://adl.nefelieducation.eu" target="_blank" rel="noopener" style="text-decoration:underline">adl.nefelieducation.eu</a>. If you do not have your credentials yet, write to us stating the course you are enrolled in.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img class="brand-logo brand-logo--dark" src="images/logo-dark.png" alt="Nefeli Education" width="460" height="185">
+        </a>
+        <p>International school and training centre. Languages, certifications and training for teachers, school staff and students.</p>
+      </div>
+      <div>
+        <h5>Training</h5>
+        <div class="footer-links">
+          <a href="corsi-lingua.html">Language courses</a>
+          <a href="corsi-internazionali.html#docenti">Teacher training</a>
+          <a href="corsi-internazionali.html#ata">ATA staff</a>
+          <a href="corsi-internazionali.html#studenti">Student pathways</a>
+        </div>
+      </div>
+      <div>
+        <h5>Institute</h5>
+        <div class="footer-links">
+          <a href="chi-siamo.html">About us</a>
+          <a href="progetto-olfa.html">OLFA project</a>
+          <a href="piattaforma.html">ADL Platform</a>
+          <a href="contatti.html">Contact</a>
+          <a href="https://adl.nefelieducation.eu" target="_blank" rel="noopener">Student area</a>
+        </div>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <div class="footer-links">
+          <a href="mailto:infonefelieducation@gmail.com">infonefelieducation@gmail.com</a>
+          <a href="contatti.html">Contact form</a>
+          <a href="contatti.html#scuole">School agreements</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Nefeli Education — Educational nucleus for European training for international work</span>
+      <span><a href="contatti.html">Privacy and data processing</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+<script>
+(function(){
+  'use strict';
+  var form = document.getElementById('contactForm');
+  if(!form) return;
+
+  function setErr(el, bad){
+    var f = el.closest('.field');
+    if(f) f.classList.toggle('has-err', bad);
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var nome = document.getElementById('cNome');
+    var email = document.getElementById('cEmail');
+    var motivo = document.getElementById('cMotivo');
+    var msg = document.getElementById('cMsg');
+    var privacy = document.getElementById('cPrivacy');
+    var ok = true;
+
+    if(!nome.value.trim()){ setErr(nome,true); ok=false; } else setErr(nome,false);
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email.value.trim())){ setErr(email,true); ok=false; } else setErr(email,false);
+    if(!motivo.value){ setErr(motivo,true); ok=false; } else setErr(motivo,false);
+    if(msg.value.trim().length < 10){ setErr(msg,true); ok=false; } else setErr(msg,false);
+    if(!privacy.checked){ ok=false; privacy.style.outline='2px solid #a33a2c'; } else privacy.style.outline='';
+
+    if(!ok) return;
+
+    var body = 'WEBSITE ENQUIRY — Nefeli Education\n\n' +
+      'Name: ' + nome.value.trim() + '\n' +
+      'Email: ' + email.value.trim() + '\n' +
+      'Phone: ' + (document.getElementById('cTel').value.trim() || '—') + '\n' +
+      'Institute / organisation: ' + (document.getElementById('cEnte').value.trim() || '—') + '\n' +
+      'Reason: ' + motivo.value + '\n\n' +
+      'Message:\n' + msg.value.trim();
+
+    var okBox = document.getElementById('cOk');
+    okBox.innerHTML = '<strong>Message ready.</strong> Your email programme will open with the details already filled in: press “Send” to complete. If it does not open, write to <a href="mailto:infonefelieducation@gmail.com" style="text-decoration:underline">infonefelieducation@gmail.com</a>.';
+    okBox.classList.add('show');
+
+    window.location.href = 'mailto:infonefelieducation@gmail.com?subject=' +
+      encodeURIComponent('Website enquiry — ' + motivo.value) +
+      '&body=' + encodeURIComponent(body);
+  });
+})();
+</script>
+</body>
+</html>
